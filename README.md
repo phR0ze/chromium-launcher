@@ -2,17 +2,18 @@
 
 Chromium launcher with support for Pepper Flash and custom user flags.
 
-## Usage
+Forked from `foutrelis/chromium-launcher`. All credit goes to `Evangelos Foutras`. The only
+change I've made is to change the config location and name.
 
+## Usage
 This launcher was originally written for the Arch Linux Chromium package.
 
 It is meant to be installed as `/usr/bin/chromium` and act as a wrapper around
-the Chromium binary.
+the Chromium binary. The configuration file is looked for at `/etc/chromium/launcher.conf`
 
-Running `chromium --help` will show where it looks for the `chromium-flags.conf`
-file, along with a list of the custom flags it was able to read from it. If
-PepperFlash was found on the system, it will generate and display flags for
-that as well.
+Running `chromium --help` will show the config location file along with a list of the custom flags it
+was able to read from it. If PepperFlash was found on the system, it will generate and display flags
+for that as well.
 
 ## License
 
